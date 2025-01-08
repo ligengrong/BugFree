@@ -16,11 +16,10 @@
   </PropertyGroup>
   <ItemGroup>
 	<PackageReference Include="NewLife.Core" Version="11.3.2025.101" />
-	<None Include="..\README.md">
+	<None Include="README.md">
 	  <Pack>True</Pack>
 	  <PackagePath>\</PackagePath>
 	</None>
-	<!--<Content Include="..\logo.png" Link="logo.png" PackagePath="\"/>-->
   </ItemGroup>
 
 </Project>
