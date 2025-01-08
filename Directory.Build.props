@@ -1,0 +1,37 @@
+<Project>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+	<VersionSuffix>$([System.DateTime]::Now.ToString(`yyMMdd.HHmm`))-beta$([System.DateTime]::Now.ToString(`HHmm`))</VersionSuffix>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+	<VersionSuffix>$([System.DateTime]::Now.ToString(`yyMMdd.HHmm`))</VersionSuffix>
+  </PropertyGroup>
+  <PropertyGroup>
+	<Authors>IoTHub开发团队 WeChat:ZZCTWC</Authors>
+	<Company>$(Authors)</Company>
+	<Owners>$(Authors)</Owners>
+	<Copyright>©2024-$([System.DateTime]::Now.ToString(`yyyy`)) $(Authors)</Copyright>
+	<VersionPrefix>1.0</VersionPrefix>
+	<Version>$(VersionPrefix).$(VersionSuffix)</Version>
+	<FileVersion>$(Version)</FileVersion>
+	<AssemblyVersion>$(VersionPrefix).*</AssemblyVersion>
+	<Deterministic>false</Deterministic>
+	<LangVersion>latest</LangVersion>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+	<EmbedUntrackedSources>true</EmbedUntrackedSources>
+	<IncludeSymbols>true</IncludeSymbols>
+	<EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+	<LangVersion>latest</LangVersion>
+	<Deterministic>false</Deterministic>
+	<PackageIcon>logo.png</PackageIcon>
+	<RepositoryUrl>https://github.com/ligengrong/BugFree</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/ligengrong/BugFree</PackageProjectUrl>
+  </PropertyGroup>
+  <ItemGroup>
+	<Content Include="..\logo.png" Link="logo.png" PackagePath="\"/>
+  </ItemGroup>
+</Project>

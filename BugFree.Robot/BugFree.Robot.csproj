@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFrameworks>netstandard2.1;net5.0;net6.0;net7.0;net8.0;net9.0;</TargetFrameworks>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+	<AssemblyName>BugFree.Robot</AssemblyName>
+	<AssemblyTitle>$(AssemblyName)</AssemblyTitle>
+	<Description>$(AssemblyName)企业微信、钉钉、WeLink机器人服务</Description>
+	<PackageTags>$(AssemblyName);企业微信;钉钉;WeLink;webhook;机器人;Robot;</PackageTags>
+	<PackageReleaseNotes>企业微信;钉钉;WeLink;webhook;机器人;Robot;</PackageReleaseNotes>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<OutputPath>..\Bin</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+	<PackageReference Include="NewLife.Core" Version="11.3.2025.101" />
+	<None Include="..\README.md">
+	  <Pack>True</Pack>
+	  <PackagePath>\</PackagePath>
+	</None>
+	<!--<Content Include="..\logo.png" Link="logo.png" PackagePath="\"/>-->
+  </ItemGroup>
+
+</Project>
